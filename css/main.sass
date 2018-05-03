@@ -1,6 +1,12 @@
 @import _variables
 @import _mixins
 
+%text-icon
+     display: inline-block
+     width: 49%
+     box-sizing: border-box
+     text-align: center
+     
 body 
      font-family: $font-family
      background-color: $light-blue
@@ -38,10 +44,10 @@ nav
           padding: 10px
           text-align: center
           &:hover 
-               @include box(100%,$hover,5px,2px 2px 5px transparent)
-     
+               +box(100%,$hover,5px,2px 2px 5px transparent)
+
 .box-img 
-     @include box(30%,transparent,0px,2px 2px 5px $sombra)
+     +box(30%,transparent,0px,2px 2px 5px $sombra)
      border: 1px solid transparent
      margin: auto
      margin-top: 2%
@@ -56,18 +62,32 @@ nav
           margin: 20px 0px 20px 0px
           display: block
 .box-info 
-     display: inline-block
-     width: 49%
-     box-sizing: border-box
-     text-align: center
+     @extend %text-icon
      padding: 50px 100px 50px 100px
+
 .implementacion
+     margin: 100px
+     ol
+          padding: 0px
+     li 
+          margin: 10px 0px
      span 
-          @include box(75%,$pink,5px,2px 2px 5px $sombra)
+          +box(100%,$pink,2px,2px 2px 5px $sombra)
           display: block
-          margin: 10px 0px 10px 0px
+          margin: 10px 0px 
           padding: 10px
-                    
+          text-align: center
+
+.box-implementacion
+     @extend %text-icon
+     transform: translateX(50%)
+
+footer
+     div
+          text-align: center
+          color: $white
+          transform: translateY(250%)
+                            
 
           
           

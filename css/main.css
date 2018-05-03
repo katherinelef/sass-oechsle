@@ -1,3 +1,9 @@
+.box-info, .box-implementacion {
+  display: inline-block;
+  width: 49%;
+  box-sizing: border-box;
+  text-align: center; }
+
 body {
   font-family: "Raleway", sans-serif;
   background-color: #e8eaf6;
@@ -58,19 +64,30 @@ nav a {
     display: block; }
 
 .box-info {
-  display: inline-block;
-  width: 49%;
-  box-sizing: border-box;
-  text-align: center;
   padding: 50px 100px 50px 100px; }
 
-.implementacion span {
-  width: 75%;
-  background-color: #e1bee7;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px #999;
-  display: block;
-  margin: 10px 0px 10px 0px;
-  padding: 10px; }
+.implementacion {
+  margin: 100px; }
+  .implementacion ol {
+    padding: 0px; }
+  .implementacion li {
+    margin: 10px 0px; }
+  .implementacion span {
+    width: 100%;
+    background-color: #e1bee7;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px #999;
+    display: block;
+    margin: 10px 0px;
+    padding: 10px;
+    text-align: center; }
+
+.box-implementacion {
+  transform: translateX(50%); }
+
+footer div {
+  text-align: center;
+  color: #ffffff;
+  transform: translateY(250%); }
 
 /*# sourceMappingURL=main.css.map */
