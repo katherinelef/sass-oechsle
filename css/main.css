@@ -55,16 +55,16 @@ nav a {
   margin-top: 2%; }
   .box-img figure img {
     width: 100%;
-    margin: 20px 0px 20px 0px; }
+    margin: 20px 0px; }
   .box-img a {
     text-decoration: none;
     color: #ffc107;
     text-align: center;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px;
     display: block; }
 
 .box-info {
-  padding: 50px 100px 50px 100px; }
+  padding: 50px 100px; }
 
 .implementacion {
   margin: 100px; }
