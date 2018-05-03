@@ -1,0 +1,78 @@
+@import _variables
+@import _mixins
+
+body 
+     font-family: $font-family
+     background-color: $light-blue
+     margin: 0 auto
+
+header, footer 
+     background-color: $blue
+     height: 100px
+
+nav 
+     h1
+          color: $white
+          font-size: 35px
+          margin: 0
+          padding: 30px
+          display: inline-block
+          width: 50%
+          box-sizing: border-box
+          transform: translateX(20%)
+          
+
+     ul
+          display: inline-block
+          float: right
+          width: 50%
+          box-sizing: border-box
+          transform: translateY(30%)
+           
+
+          li 
+               list-style: none
+               display: inline-block
+               margin-right: 20px
+               font-size: 20px
+               
+     a 
+          text-decoration: none
+          color: $white
+          display: inline-block
+          padding: 10px
+          text-align: center
+
+          &:hover 
+               @include box(100%,$hover,10px,2px 2px 5px transparent)
+     
+.box-img 
+     @include box(30%,transparent,0px,2px 2px 5px $sombra)
+     border: 1px solid transparent
+     margin: auto
+     margin-top: 2%
+
+     figure
+          img 
+               width: 100%
+     a
+          text-decoration: none
+          color: $orange
+          text-align: center
+          margin-top: 20px
+          margin-bottom: 20px
+          display: block
+               
+
+          
+          
+          
+     
+
+    
+
+
+
+
+
+

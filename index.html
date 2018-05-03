@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Sass-Oechsle</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+      <nav>
+        <h1>Cardify</h1>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="" target="_blank">Test</a>
+              </li>
+              <li>
+                <a href="">Github</a>
+              </li>
+              <li>
+                <a href="" download>Download cardify</a>
+              </li>
+            </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+            <div class="box-img">
+              <figure>
+                <img src="https://image.ibb.co/eCpDG7/perro1.jpg">
+              </figure>
+              <hr>
+              <div>
+                <a href="" target="_blank">VER DEMO</a>
+              </div>
+            </div>
+    </main>
+  
+    <!-- section-info -->
+    <section>
+      <div>
+        <div>
+          <div>
+            <div>
+              <i class="material-icons">local_library</i>
+              <p>Utilidad</p>
+              <p>Cardify es un plugin implementado con jquery que tiene como finalidad darle un efecto hover a las imagenes y
+                que mostrar el texto del atributo alt de la imagen.</p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <i class="material-icons">settings</i>
+              <p>Escalabilidad</p>
+              <p>Al ser un código muy útil posee escalabilidad, ya que lo puede editar el usuario de acuerdo a sus necesidades</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- section implementation-->
+    <section>
+      <div>
+        <hr>
+        <div class="row">
+          <h6>Implementación
+            <i class="material-icons">build</i>
+          </h6>
+          <ol>
+            <li>Descargar los siguientes archivos y añadirlos a tu proyecto:
+              <a href="../assets/plugin-cardify.rar">
+                <i class="material-icons indigo white-text">move_to_inbox</i>
+              </a>
+            </li>
+            <li>Vincular el css, js y jQuery en el html.</li>
+            <div>
+              <div>
+                <div>
+                  <span>
+                    &lt;link rel="stylesheet" href="test.css"&gt;
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <span>
+                    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt;&lt;/script&gt;
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <span>
+                    &lt;script src="path-to-cardify.js"&gt;&lt;/script&gt;
+                  </span>
+                </div>
+              </div>
+            </div>
+            <li>Elaborar la siguiente estructura en el html.</li>
+            <div>
+              <div>
+                <div>
+                  <span>
+                    &lt;div class="container"&gt;
+                    <br> &lt;img src="../assets/images/perro1.jpg" alt="Cachorro1"&gt;
+                    <br> &lt;img src="../assets/images/perro2.jpg" alt="Cachorro2"&gt;
+                    <br> &lt;img src="../assets/images/perro3.jpg" alt="Cachorro3"&gt;
+                    <br> &lt;img src="../assets/images/perro4.jpg" alt="Cachorro4"&gt;
+                    <br> &lt;img src="../assets/images/perro5.jpg" alt="Cachorro5"&gt;
+                    <br> &lt;img src="../assets/images/perro6.jpg" alt="Cachorro6"&gt;
+                    <br> &lt;img src="../assets/images/perro7.jpg" alt="Cachorro7"&gt;
+                    <br> &lt;img src="../assets/images/perro8.jpg" alt="Cachorro8"&gt;
+                    <br> &lt;/div&gt;
+                  </span>
+                </div>
+              </div>
+            </div>
+            <li>En el contenedor de las imágenes colocar una clase llamada container</li>
+            <li>Todas las imágenes deben de tener su atributo alt</li>
+            <li>Llamar al plugin en su archivo js</li>
+            <div>
+              <div>
+                <div>
+                  <span>
+                    $('.container').cardify({});
+                  </span>
+                </div>
+              </div>
+            </div>
+            <li>Ademas podran modificar el texto con las siguientes propiedades</li>
+            <div>
+              <div>
+                <div>
+                  <span>
+                    $('.container').cardify({color:'ingrese un color', fontFamily:'ingrese un tipo de letra'});
+                  </span>
+                </div>
+              </div>
+            </div>
+          </ol>
+        </div>
+      </div>
+    </section>
+  
+    <!-- footer -->
+    <footer>
+      <div>
+        © 2018 Copyright Cardify
+      </div>
+    </footer>
+  </body>
+  
+</html>
